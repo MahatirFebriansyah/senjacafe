@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100vh; /* Body mengisi layar penuh */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main mengisi ruang antara header dan footer */
+main {
+    flex: 1;
+    background-image: url(/image/bgnew.jpg);
+    padding: 2rem;
+}
+
+.container {
+    border: 1px solid black;
+}
+
+.judul {
+    text-align: center;
+    font-size: 20px;
+    padding: 30px;
+}
+
+.deskripsi, .section {
+    margin: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(61, 63, 65, 0.192);
+    border-radius: 20px;
+    height: 500px;
+}   
+
+.deskripsi img {
+    width: 500px;
+    margin-left: 70px;
+}
+
+.deskripsi p {
+    margin-right: 50px;
+    margin-left: 100px;
+    text-align: justify;
+    color: white;
+    font-size: 20px;
+}
+
+.section img {
+    width: 500px;
+    margin-right: 70px;
+}
+
+.section p {
+    margin-left: 50px;
+    margin-right: 100px;
+    text-align: justify;
+    color: white;
+    font-size: 20px;
+}
+
+.span-cafe {
+    color: rgb(179, 103, 27);
+}
+
+.navbar-nav {
+    margin-left: 70%;
+}
+
+.nav-item {
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.nav-item:hover {
+    background-color: peru;
+    transition: all 0.5s ease;
+}
+
+.dropdown-item:hover {
+    background-color: peru;
+    transition: all 0.5s ease;
+}
+
+.container-fluid img {
+    width: 50px;
+    margin-left: 50px;
+}
+
+.map iframe {
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+}
+
+.informasi {
+    margin-left: 150px;
+    font-size: 20px;
+}
+
+.informasi h1 {
+    margin-bottom: 30px;
+}
+
+#wa {
+    color: green;
+    margin-right: 10px;
+}
+
+#email {
+    color: rgb(192, 32, 53);
+    margin-right: 10px;
+}
+
+#ig {
+    color: rgb(184, 28, 132);
+    margin-right: 10px;
+}
+
+footer {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer img {
+    width: 200px;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        margin-left: 0;
+    }
+    .deskripsi, .section {
+        margin-top: 5rem;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .deskripsi img {
+        width: 300px;
+        margin-left: 45px;
+    }
+}
